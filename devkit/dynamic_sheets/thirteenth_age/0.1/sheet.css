@@ -3,83 +3,65 @@
 * Copy and paste this directly into the CSS textarea on obsidianportal.com
 *****************************/
 
-/****************************
-* Basic Info
-*****************************/
-.thirteenth_age .basic_info { margin-bottom: 2em; }
+/* Basic Info */
+.ds_thirteenth_age .basic_info { margin-bottom: 2em; }
 
-.thirteenth_age .name_class {
+.ds_thirteenth_age .name_class {
     display: inline-block;
     float: left;
     margin-right: 8em;
 }
 
-/****************************
-* row two: ability scores, derived stats and hp
-*****************************/
-.thirteenth_age .row_two { clear: both; }
+/* followed by ability scores, which should look like a table */
+.ds_thirteenth_age .abilities { margin-bottom: 3em; }
 
-.thirteenth_age .row_two div { vertical-align: top; }
+.ds_thirteenth_age .abilities div { clear: left; }
 
-/****************************
-* ability scores should look like a table
-*****************************/
-.thirteenth_age .ability_scores {
-    margin-right: 3em;
-    display: inline-block;
-}
-
-.thirteenth_age .ability_scores div { clear: left; }
-
-.thirteenth_age .ability_scores span { float: left; }
-.thirteenth_age .ability_scores span:first-of-type {
+.ds_thirteenth_age .abilities span { float: left; }
+.ds_thirteenth_age .abilities span:first-of-type {
     text-align: left;
     width: 7em;
 }
-.thirteenth_age .ability_scores span:not(first-of-type) {
+.ds_thirteenth_age .abilities span:not(first-of-type) {
     text-align: center;
     width: 3em;
 }
 
-/****************************
-* derived stats, too
-*****************************/
-.thirteenth_age .derived_stats {
-    margin-right: 3em;
+/* derived stats (including health) are all on the same row */
+.ds_thirteenth_age .derived_stats { margin-bottom: 3em; }
+
+.ds_thirteenth_age .defenses, .ds_thirteenth_age .health_stats {
     display: inline-block;
+    vertical-align: top;
+    margin-right: 3em;
 }
-.thirteenth_age .derived_stats span {
+
+.ds_thirteenth_age .defenses span {
     float: left;
     min-width: 3em;
 }
 
-/****************************
-* same with HP and recoveries
-*****************************/
-.thirteenth_age .health_stats { display: inline-block; }
-
-.thirteenth_age .health_stats span:first-of-type {
+.ds_thirteenth_age .health_stats span:first-of-type {
     float: left;
     min-width: 8em;
 }
 
-/***************************
-* three columns of text for these items
-****************************/
-.thirteenth_age .column1, .thirteenth_age .column2, .thirteenth_age .column3 {
+
+/* attack scores are a row unto themselves */
+.ds_thirteenth_age .combat_stats { margin-bottom: 3em; }
+
+.ds_thirteenth_age .combat_stats div { clear: both; }
+
+.ds_thirteenth_age .combat_stats span {
+    float: left;
+    min-width: 7em;
+}
+
+.ds_thirteenth_age .column1, .ds_thirteenth_age .column2 {
     float: left;
     width: 20em;
     margin-right: 3em;
     margin-bottom: 1em;
 }
 
-.thirteenth_age .column3 { width: 25em; }
-
-.thirteenth_age .combat_stats { margin-bottom: 2em; }
-
-.thirteenth_age .combat_stats span {
-    float: left;
-    min-width: 7em;
-}
-
-.thirteenth_age .player_info { clear: both; }
+.ds_thirteenth_age .player_info { clear: both; }
