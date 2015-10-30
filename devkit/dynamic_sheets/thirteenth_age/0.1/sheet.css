@@ -6,9 +6,9 @@
 /****************************
 * Basic Info
 *****************************/
-.ds_13th_Age .basic_info { margin-bottom: 2em; }
+.thirteenth_age .basic_info { margin-bottom: 2em; }
 
-.ds_13th_Age .name_class {
+.thirteenth_age .name_class {
     display: inline-block;
     float: left;
     margin-right: 8em;
@@ -17,26 +17,26 @@
 /****************************
 * row two: ability scores, derived stats and hp
 *****************************/
-.ds_13th_Age .row_two { clear: both; }
+.thirteenth_age .row_two { clear: both; }
 
-.ds_13th_Age .row_two div { vertical-align: top; }
+.thirteenth_age .row_two div { vertical-align: top; }
 
 /****************************
 * ability scores should look like a table
 *****************************/
-.ds_13th_Age .ability_scores {
+.thirteenth_age .ability_scores {
     margin-right: 3em;
     display: inline-block;
 }
 
-.ds_13th_Age .ability_scores div { clear: left; }
+.thirteenth_age .ability_scores div { clear: left; }
 
-.ds_13th_Age .ability_scores span { float: left; }
-.ds_13th_Age .ability_scores span:first-of-type {
+.thirteenth_age .ability_scores span { float: left; }
+.thirteenth_age .ability_scores span:first-of-type {
     text-align: left;
     width: 7em;
 }
-.ds_13th_Age .ability_scores span:not(first-of-type) {
+.thirteenth_age .ability_scores span:not(first-of-type) {
     text-align: center;
     width: 3em;
 }
@@ -44,11 +44,11 @@
 /****************************
 * derived stats, too
 *****************************/
-.ds_13th_Age .derived_stats {
+.thirteenth_age .derived_stats {
     margin-right: 3em;
     display: inline-block;
 }
-.ds_13th_Age .derived_stats span {
+.thirteenth_age .derived_stats span {
     float: left;
     min-width: 3em;
 }
@@ -56,9 +56,9 @@
 /****************************
 * same with HP and recoveries
 *****************************/
-.ds_13th_Age .health_stats { display: inline-block; }
+.thirteenth_age .health_stats { display: inline-block; }
 
-.ds_13th_Age .health_stats span:first-of-type {
+.thirteenth_age .health_stats span:first-of-type {
     float: left;
     min-width: 8em;
 }
@@ -66,20 +66,20 @@
 /***************************
 * three columns of text for these items
 ****************************/
-.ds_13th_Age .column1, .ds_13th_Age .column2, .ds_13th_Age .column3 {
+.thirteenth_age .column1, .thirteenth_age .column2, .thirteenth_age .column3 {
     float: left;
     width: 20em;
     margin-right: 3em;
     margin-bottom: 1em;
 }
 
-.ds_13th_Age .column3 { width: 25em; }
+.thirteenth_age .column3 { width: 25em; }
 
-.ds_13th_Age .combat_stats { margin-bottom: 2em; }
+.thirteenth_age .combat_stats { margin-bottom: 2em; }
 
-.ds_13th_Age .combat_stats span {
+.thirteenth_age .combat_stats span {
     float: left;
     min-width: 7em;
 }
 
-.ds_13th_Age .player_info { clear: both; }
+.thirteenth_age .player_info { clear: both; }
