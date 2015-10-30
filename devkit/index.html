@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <title>DST Dev Kit</title>
+  <title>13th Age</title>
   <script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
   <script type="text/javascript" src="javascripts/jquery.jeditable-1.7.1.js"></script>
   <script type="text/javascript" src="javascripts/namespace.js"></script>
@@ -13,84 +13,467 @@
   <script type="text/javascript" src="example_data.js"></script>
   
   <!-- Load the CSS for the DST, replace with your own! -->
-  <link href="dynamic_sheets/minimal4e/0.1/sheet.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="dynamic_sheets/ds_13th_Age/0.1/sheet.css" media="screen" rel="stylesheet" type="text/css" />
   
   <!-- Load the JS for the DST, replace with your own! -->
-  <script type="text/javascript" src="dynamic_sheets/minimal4e/0.1/sheet.js"></script>
+  <script type="text/javascript" src="dynamic_sheets/13th_Age/0.1/sheet.js"></script>
   
 </head>
 <body>
-  <p>
-    Below is an example dynamic character sheet. Try clicking on the values in order to edit them. This is how users will interact with a dynamic sheet.
-  </p>
-  <p>
-    If you want to make your own, make sure to <a href="http://help.obsidianportal.com/faqs/advanced/creating-a-dynamic-character-sheet-template-dst">read the tutorial</a> first. Then, just start editing the HTML in this file. Edit the sample data in <em>example_data.js</em> in order to create data that works with your chosen game system.
-  </p>
-  
   <div class="dynamic_sheet_container">
   
-    <!-- Every dynamic sheet will be surrounded by a div that has the class of "ds_DST_SLUG". In this example, the slug for my DST is 'minimal4e' -->
-    <div id="dynamic_sheet_999" class="dynamic_sheet ds_minimal4e editable">
+    <!-- Every dynamic sheet will be surrounded by a div that has the class of "ds_DST_SLUG". In this example, the slug for my DST is 'ds_13th_Age' -->
+    <div id="dynamic_sheet_999" class="dynamic_sheet ds_13th_Age editable">
       <!-- This is inserted automatically. Ignore it... -->
-      <span style="display:none;" class="dst_slug">minimal4e</span>
+      <span style="display:none;" class="dst_slug">ds_13th_Age</span>
+
+
+
+
+
+
+
+
+
+
+
       <!-- 
       Below is your HTML template.
       Copy ONLY this section into the HTML Template textarea on Obsidian Portal. Do not copy any of the
       surrounding HTML!
       -->
       <div class="basic_info">
-        <h3>Basic Info</h3>
-        <div class="name">
-          <span>Name:</span>
-          <span class="dsf dsf_name"></span>
-        </div>
-        <div class="player">
-          <span>Player:</span>
-          <span class="dsf dsf_player"></span>
-        </div>
-        <div class="campaign">
-          <span>Campaign:</span>
-          <span class="dsf dsf_campaign"></span>
-        </div>
-        <div class="level">
-          <span>Level:</span>
-          <span class="dsf dsf_level"></span>
-        </div>
+          <div class="name_class">
+              <div class="name">
+                  <span>Name:</span>
+                  <span class="dsf dsf_name"></span>
+              </div>
+              <div class="class">
+                  <span>Class:</span>
+                  <span class="dsf dsf_class"></span>
+              </div>
+          </div>
+          <div class="race_level">
+              <div class="race">
+                  <span>Race:</span>
+                  <span class="dsf dsf_race"></span>
+              </div>
+              <div class="level">
+                  <span>Level:</span>
+                  <span class="dsf dsf_level"></span>
+              </div>
+          </div>
       </div>
 
-      <div class="ability_scores">
-        <h3>Ability Scores</h3>
-        <div class="ability_score_header">
-          <span>Ability</span>
-          <span>Score</span>
-          <span>Mod</span>
-          <span>Mod + 1/2 Level</span>
-        </div>
-        <div class="ability_score strength">
-          <span class="ability_score_name">STR</span>
-          <span class="dsf ability_score_score dsf_str"></span>
-          <span class="dsf ability_score_modifier dsf_str_modifier"></span>
-          <span class="dsf ability_score_modifier_plus_half_level dsf_str_modifier_plus_half_level"></span>
-        </div>
-        <div class="ability_score dexterity">
-          <span class="ability_score_name">DEX</span>
-          <span class="dsf ability_score_score dsf_dex"></span>
-          <span class="dsf ability_score_modifier dsf_dex_modifier"></span>
-          <span class="dsf ability_score_modifier_plus_half_level dsf_dex_modifier_plus_half_level"></span>
-        </div>
+      <div class="row_two">
+          <div class="ability_scores">
+              <div class="ability_score_names">
+                  <span>Ability</span>
+                  <span class="ability_score_name">STR</span>
+                  <span class="ability_score_name">CON</span>
+                  <span class="ability_score_name">DEX</span>
+                  <span class="ability_score_name">INT</span>
+                  <span class="ability_score_name">WIS</span>
+                  <span class="ability_score_name">CHA</span>
+              </div>
+              <div class="ability_scores">
+                  <span>Score</span>
+                  <span class="dsf ability_score_score dsf_str"></span>
+                  <span class="dsf ability_score_score dsf_con"></span>
+                  <span class="dsf ability_score_score dsf_dex"></span>
+                  <span class="dsf ability_score_score dsf_int"></span>
+                  <span class="dsf ability_score_score dsf_wis"></span>
+                  <span class="dsf ability_score_score dsf_cha"></span>
+              </div>
+              <div class="ability_modifiers">
+                  <span>Mod</span>
+                  <span class="dsf ability_score_modifier dsf_str_modifier"></span>
+                  <span class="dsf ability_score_modifier dsf_con_modifier"></span>
+                  <span class="dsf ability_score_modifier dsf_dex_modifier"></span>
+                  <span class="dsf ability_score_modifier dsf_int_modifier"></span>
+                  <span class="dsf ability_score_modifier dsf_wis_modifier"></span>
+                  <span class="dsf ability_score_modifier dsf_cha_modifier"></span>
+              </div>
+              <div class="ability_modifiers_plus_level">
+                  <span>Mod + Level</span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_str_modifier_plus_level"></span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_con_modifier_plus_level"></span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_dex_modifier_plus_level"></span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_int_modifier_plus_level"></span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_wis_modifier_plus_level"></span>
+                  <span class="dsf ability_score_modifier_plus_level dsf_cha_modifier_plus_level"></span>
+              </div>
+          </div>
+
+          <div class="derived_stats">
+              <div class="stat_name ac">
+                  <span class="stat_name">AC</span>
+                  <span class="dsf stat_score dsf_ac"></span>
+              </div>
+              <div class="stat_name pd">
+                  <span class="stat_name">PD</span>
+                  <span class="dsf stat_score dsf_pd"></span>
+              </div>
+              <div class="stat_name md">
+                  <span class="stat_name">MD</span>
+                  <span class="dsf stat_score dsf_md"></span>
+              </div>
+          </div>
+
+          <div class="health_stats">
+              <div class="stat_name hp">
+                  <span class="stat_name">HP</span>
+                  <span class="dsf stat_score dsf_current_hp"></span> / 
+                  <span class="dsf stat_score dsf_max_hp"></span>
+              </div>
+              <div class="stat_name recoveries">
+                  <span class="stat_name">Recoveries</span>
+                  <span class="dsf stat_score dsf_current_recoveries"></span> / 
+                  <span class="dsf stat_score dsf_max_recoveries"></span>
+              </div>
+              <div class="stat_name recovery_roll">
+                  <span class="stat_name">Recovery Roll</span>
+                  <span class="dsf stat_score dsf_recovery_roll"></span>
+              </div>
+              <div class="stat_name recovery_roll">
+              </div>
+          </div>
       </div>
-      
-      <!-- An example of how to use checkboxes -->
-      <div class="trained_skills">
-        <h3>Trained Skills</h3>
-        <ul>
-          <li><span class="dsf dsf_athletics_trained checkbox"></span>Athletics</li>
-          <li><span class="dsf dsf_religion_trained checkbox"></span>Religion</li>
-          <li><span class="dsf dsf_stealth_trained checkbox"></span>Stealth</li>
-        </ul>
-      </div> <!-- trained_skills -->
+
+      <div class="column1">
+          <div class="one_unique_thing">
+              <h3>One Unique Thing</h3>
+              <span class="dsf dsf_one_unique_thing"></span>
+          </div>
+
+          <div class="icon_relationships">
+              <h3>Icon Relationships</h3>
+              <div class="icon_relationship">
+                  <span class="dsf dsf_icon_relationship1"></span>
+              </div>
+              <div class="icon_relationship">
+                  <span class="dsf dsf_icon_relationship2"></span>
+              </div>
+              <div class="icon_relationship">
+                  <span class="dsf dsf_icon_relationship3"></span>
+              </div>
+              <div class="icon_relationship">
+                  <span class="dsf dsf_icon_relationship4"></span>
+              </div>
+          </div>
+
+          <div class="backgrounds">
+              <h3>Backgrounds</h3>
+              <div class="background background1">
+                  <span class="dsf dsf_background1"></span>
+              </div>
+              <div class="background background2">
+                  <span class="dsf dsf_background2"></span>
+              </div>
+              <div class="background background3">
+                  <span class="dsf dsf_background3"></span>
+              </div>
+              <div class="background background4">
+                  <span class="dsf dsf_background4"></span>
+              </div>
+              <div class="background background5">
+                  <span class="dsf dsf_background5"></span>
+              </div>
+              <div class="background background6">
+                  <span class="dsf dsf_background6"></span>
+              </div>
+          </div>
+
+          <div class="talents">
+              <h3>Talents</h3>
+              <div class="talent talent1">
+                  <span class="dsf dsf_talent1"></span>
+              </div>
+              <div class="talent talent2">
+                  <span class="dsf dsf_talent2"></span>
+              </div>
+              <div class="talent talent3">
+                  <span class="dsf dsf_talent3"></span>
+              </div>
+              <div class="talent talent4">
+                  <span class="dsf dsf_talent4"></span>
+              </div>
+              <div class="talent talent5">
+                  <span class="dsf dsf_talent5"></span>
+              </div>
+          </div>
+
+          <div class="class_features">
+              <h3>Class Features</h3>
+              <div class="class_feature class_feature01">
+                  <span class="dsf dsf_class_feature01"></span>
+              </div>
+              <div class="class_feature class_feature02">
+                  <span class="dsf dsf_class_feature02"></span>
+              </div>
+              <div class="class_feature class_feature03">
+                  <span class="dsf dsf_class_feature03"></span>
+              </div>
+              <div class="class_feature class_feature04">
+                  <span class="dsf dsf_class_feature04"></span>
+              </div>
+              <div class="class_feature class_feature05">
+                  <span class="dsf dsf_class_feature05"></span>
+              </div>
+              <div class="class_feature class_feature06">
+                  <span class="dsf dsf_class_feature06"></span>
+              </div>
+              <div class="class_feature class_feature07">
+                  <span class="dsf dsf_class_feature07"></span>
+              </div>
+              <div class="class_feature class_feature08">
+                  <span class="dsf dsf_class_feature08"></span>
+              </div>
+              <div class="class_feature class_feature09">
+                  <span class="dsf dsf_class_feature09"></span>
+              </div>
+              <div class="class_feature class_feature10">
+                  <span class="dsf dsf_class_feature10"></span>
+              </div>
+          </div>
+      </div>
+
+      <div class="column2">
+          <div class="racial_power">
+              <h3>Racial Power</h3>
+              <span class="dsf dsf_racial_power"></span>
+          </div>
+
+          <div class="powers_spells">
+              <h3>Powers & Spells</h3>
+              <div class="power power01">
+                  <span class="dsf dsf_power01"</span>
+              </div>
+              <div class="power power02">
+                  <span class="dsf dsf_power02"</span>
+              </div>
+              <div class="power power03">
+                  <span class="dsf dsf_power03"</span>
+              </div>
+              <div class="power power04">
+                  <span class="dsf dsf_power04"</span>
+              </div>
+              <div class="power power05">
+                  <span class="dsf dsf_power05"</span>
+              </div>
+              <div class="power power06">
+                  <span class="dsf dsf_power06"</span>
+              </div>
+              <div class="power power07">
+                  <span class="dsf dsf_power07"</span>
+              </div>
+              <div class="power power08">
+                  <span class="dsf dsf_power08"</span>
+              </div>
+              <div class="power power09">
+                  <span class="dsf dsf_power09"</span>
+              </div>
+              <div class="power power10">
+                  <span class="dsf dsf_power10"</span>
+              </div>
+              <div class="power power11">
+                  <span class="dsf dsf_power11"</span>
+              </div>
+              <div class="power power12">
+                  <span class="dsf dsf_power12"</span>
+              </div>
+              <div class="power power13">
+                  <span class="dsf dsf_power13"</span>
+              </div>
+          </div>
+
+          <div class="feats">
+              <h3>Feats</h3>
+              <div class="feat feat01">
+                  <span class="dsf dsf_feat01"></span> 
+              </div>
+              <div class="feat feat02">
+                  <span class="dsf dsf_feat02"></span>
+              </div>
+              <div class="feat feat03">
+                  <span class="dsf dsf_feat03"></span>
+              </div>
+              <div class="feat feat04">
+                  <span class="dsf dsf_feat04"></span>
+              </div>
+              <div class="feat feat05">
+                  <span class="dsf dsf_feat05"></span>
+              </div>
+              <div class="feat feat06">
+                  <span class="dsf dsf_feat06"></span>
+              </div>
+              <div class="feat feat07">
+                  <span class="dsf dsf_feat07"></span>
+              </div>
+              <div class="feat feat08">
+                  <span class="dsf dsf_feat08"></span>
+              </div>
+              <div class="feat feat09">
+                  <span class="dsf dsf_feat09"></span>
+              </div>
+              <div class="feat feat10">
+                  <span class="dsf dsf_feat10"></span>
+              </div>
+              <div class="feat feat11">
+                  <span class="dsf dsf_feat11"></span>
+              </div>
+          </div>
+      </div>
+
+      <div class="column3">
+          <div class="combat_stats">
+              <div class="melee_attack2">
+                  <span class="dsf dsf_melee_attack2"></span>
+                  <span class="dsf dsf_melee_hit2"></span>
+                  <span class="dsf dsf_melee_miss2"></span>
+              </div>
+              <div class="melee_attack1">
+                  <span class="dsf dsf_melee_attack1"></span>
+                  <span class="dsf dsf_melee_hit1"></span>
+                  <span class="dsf dsf_melee_miss1"></span>
+              </div>
+              <div>
+                  <span class="header">Attack</span>
+                  <span class="header">Hit</span>
+                  <span class="header">Miss</span>
+              </div>
+              <div class="ranged_attack1">
+                  <span class="dsf dsf_ranged_attack1"></span>
+                  <span class="dsf dsf_ranged_hit1"></span>
+                  <span class="dsf dsf_ranged_miss1"></span>
+              </div>
+              <div class="ranged_attack2">
+                  <span class="dsf dsf_ranged_attack2"></span>
+                  <span class="dsf dsf_ranged_hit2"></span>
+                  <span class="dsf dsf_ranged_miss2"></span>
+              </div>
+          </div>
+
+          <div class="magic_items">
+              <h3>Magic Items</h3>
+              <div class="magic_item magic_item01">
+                  <span class="dsf dsf_magic_item01"></span>
+              </div>
+              <div class="magic_item magic_item02">
+                  <span class="dsf dsf_magic_item02"></span>
+              </div>
+              <div class="magic_item magic_item03">
+                  <span class="dsf dsf_magic_item03"></span>
+              </div>
+              <div class="magic_item magic_item04">
+                  <span class="dsf dsf_magic_item04"></span>
+              </div>
+              <div class="magic_item magic_item05">
+                  <span class="dsf dsf_magic_item05"></span>
+              </div>
+              <div class="magic_item magic_item06">
+                  <span class="dsf dsf_magic_item06"></span>
+              </div>
+              <div class="magic_item magic_item07">
+                  <span class="dsf dsf_magic_item07"></span>
+              </div>
+              <div class="magic_item magic_item08">
+                  <span class="dsf dsf_magic_item08"></span>
+              </div>
+              <div class="magic_item magic_item09">
+                  <span class="dsf dsf_magic_item09"></span>
+              </div>
+              <div class="magic_item magic_item10">
+                  <span class="dsf dsf_magic_item10"></span>
+              </div>
+              <div class="magic_item magic_item11">
+                  <span class="dsf dsf_magic_item11"></span>
+              </div>
+              <div class="magic_item magic_item12">
+                  <span class="dsf dsf_magic_item12"></span>
+              </div>
+          </div>
+
+          <div class="equipment">
+              <h3>Equipment</h3>
+              <div class="item item1">
+                  <span class="dsf dsf_item1"></span>
+              </div>
+              <div class="item item2">
+                  <span class="dsf dsf_item2"></span>
+              </div>
+              <div class="item item3">
+                  <span class="dsf dsf_item3"></span>
+              </div>
+              <div class="item item4">
+                  <span class="dsf dsf_item4"></span>
+              </div>
+              <div class="item item5">
+                  <span class="dsf dsf_item5"></span>
+              </div>
+              <div class="item item6">
+                  <span class="dsf dsf_item6"></span>
+              </div>
+          </div>
+
+          <div class="incremental_advances">
+              <h3>Incremental Advances</h3>
+              <div class="advance">
+                  Ability Score Bonus<span class="dsf dsf_incremental_ability_score_bonus checkbox"></span>
+              </div>
+              <div class="advance">
+                  Icon Relationship Point<span class="dsf dsf_incremental_icon_relationship checkbox"></span>
+              </div>
+              <div class="advance">
+                  Extra Magic Item<span class="dsf dsf_extra_magic_item checkbox"></span>
+              </div>
+              <div class="advance">
+                  Feat<span class="dsf dsf_incremental_feat checkbox"></span>
+              </div>
+              <div class="advance">
+                  Hit Points<span class="dsf dsf_incremental_hit_points checkbox"></span>
+              </div>
+              <div class="advance">
+                  Skills<span class="dsf dsf_incremental_skills checkbox"></span>
+              </div>
+              <div class="advance">
+                  Power/Spell
+                  <span class="dsf dsf_incremental_power1 checkbox"></span>
+                  <span class="dsf dsf_incremental_power2 checkbox"></span>
+                  <span class="dsf dsf_incremental_power3 checkbox"></span>
+                  <span class="dsf dsf_incremental_power4 checkbox"></span>
+              </div>
+          </div>
+      </div>
+
+      <!-- footer -->
+      <div class="player_info">
+          <div class="player">
+            <span>Player:</span>
+            <span class="dsf dsf_player"></span>
+          </div>
+          <div class="campaign">
+            <span>Campaign:</span>
+            <span class="dsf dsf_campaign"></span>
+          </div>
+      </div>
       <!-- End HTML Template - Don't copy anything below here into the template! -->
-    </div> <!-- ds_minimal4e -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- ds_13th_Age -->
   </div> <!-- dynamic_sheet_container -->
   <br/><br/>
   
