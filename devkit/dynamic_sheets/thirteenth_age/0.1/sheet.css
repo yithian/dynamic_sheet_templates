@@ -3,7 +3,21 @@
 * Copy and paste this directly into the CSS textarea on obsidianportal.com
 *****************************/
 
-/* Basic Info */
+/* global styling */
+.ds_thirteenth_age .thirteenth_age_label, .ds_thirteenth_age h3 { font-family: fantasy; }
+
+.ds_thirteenth_age .thirteenth_age_label { font-weight: bold; }
+
+.ds_thirteenth_age h3 { text-decoration: underline; }
+
+.ds_thirteenth_age .angle {
+    transform-origin: right;
+    transform: rotate(20deg);
+}
+/***********************
+ * basic info
+ ***********************/
+/* layout */
 .ds_thirteenth_age .basic_info { margin-bottom: 2em; }
 
 .ds_thirteenth_age .name_class {
@@ -12,7 +26,18 @@
     margin-right: 8em;
 }
 
-/* followed by ability scores, which should look like a table */
+/* styling */
+.ds_thirteenth_age .avatar {
+    float: right;
+    max-height: 400px;
+    max-width: 200px;
+    border: 1px solid grey;
+}
+
+/***********************
+ * ability scores
+ ***********************/
+/* layout */
 .ds_thirteenth_age .abilities { margin-bottom: 3em; }
 
 .ds_thirteenth_age .abilities div { clear: left; }
@@ -27,8 +52,32 @@
     width: 3em;
 }
 
-/* derived stats (including health) are all on the same row */
-.ds_thirteenth_age .derived_stats { margin-bottom: 3em; }
+/* styling */
+.ds_thirteenth_age .abilities span {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.ds_thirteenth_age .abilities span:first-of-type { border-right: none; }
+.ds_thirteenth_age .abilities span:last-of-type { border-right: none; }
+.ds_thirteenth_age .abilities .ability_modifiers_plus_level span { border-bottom: none; }
+
+.ds_thirteenth_age .abilities span:first-of-type { text-align: right; }
+
+.ds_thirteenth_age .abilities .ability_score_name { font-weight: bold; }
+
+.ds_thirteenth_age .stat_name {
+    border-top-left-radius: 1em;
+    padding-left: 5px;
+    margin-right: 5px;
+    background: black;
+    color: white;
+}
+
+/***********************
+ * derived stats (including health)
+ ***********************/
+/* layout */
+.ds_thirteenth_age .derived_stats { margin-bottom: 2em; }
 
 .ds_thirteenth_age .defenses, .ds_thirteenth_age .health_stats {
     display: inline-block;
@@ -46,22 +95,57 @@
     min-width: 8em;
 }
 
+/* styling */
+.ds_thirteenth_age .derived_stats {
+    padding-top: 10px;
+    border-top: 2px dashed grey;
+}
 
-/* attack scores are a row unto themselves */
-.ds_thirteenth_age .combat_stats { margin-bottom: 3em; }
+/**********************
+ * attack scores
+ *********************/
+/* layout */
+.ds_thirteenth_age .combat_stats { margin-bottom: 2em; }
 
-.ds_thirteenth_age .combat_stats div { clear: both; }
+.ds_thirteenth_age .combat_stats div { clear: left; }
 
 .ds_thirteenth_age .combat_stats span {
     float: left;
     min-width: 7em;
 }
 
+/**********************
+ * remaining content
+ **********************/
+/* layout */
 .ds_thirteenth_age .column1, .ds_thirteenth_age .column2 {
+    display: inline-block;
     float: left;
     width: 20em;
-    margin-right: 3em;
     margin-bottom: 1em;
 }
 
+.ds_thirteenth_age .column1 { margin-right: 3em; }
+
+.ds_thirteenth_age .column1 h3, .ds_thirteenth_age .column2 h3 {
+    margin-top: 2em;
+}
+
+/* styling */
+.ds_thirteenth_age .columns {
+    margin-top: 10px;
+    border-top: 2px dashed grey;
+}
+
+/*********************
+ * footer
+ *********************/
+/* layout */
 .ds_thirteenth_age .player_info { clear: both; }
+
+/* styling */
+.ds_thirteenth_age .player_info {
+    padding-top: 10px;
+    border-top: 2px dashed grey;
+    font-size: 75%;
+}
