@@ -111,7 +111,7 @@
 }
 
 /**********************
- * remaining content
+ * remaining crunch
  **********************/
 /* layout */
 .ds_thirteenth_age .column1, .ds_thirteenth_age .column2 {
@@ -134,13 +134,26 @@
 }
 
 /*********************
+ * character bio
+ *********************/
+/* layout */
+.ds_thirteenth_age .bio { clear: both; }
+
+/* styling */
+
+.ds_thirteenth_age .bio {
+    padding-top: 10px;
+    border-top: 2px dashed grey;
+}
+
+/*********************
  * footer
  *********************/
 /* layout */
-.ds_thirteenth_age .player_info { clear: both; }
+.ds_thirteenth_age .author_info { clear: both; }
 
 /* styling */
-.ds_thirteenth_age .player_info {
+.ds_thirteenth_age .author_info {
     padding-top: 10px;
     border-top: 2px dashed grey;
     font-size: 75%;

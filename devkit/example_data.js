@@ -136,4 +136,6 @@ var dynamic_sheet_attrs = {
 
   "player" : "<a href='http://www.obsidianportal.com/profile/Yithian'>Yithian</a>",
   "campaign" : "<a href='http://tilting-at-windmills.obsidianportal.com'>Tilting at Windmills</a>",
+
+  "bio" : "Faded but practical black robes lined with light grey fur obscure most of Ashley's frail figure. Before her encounter with the Lich King, Ashley's hair fell well down her back and was a healthy chestnut. Now, however, it barely touches her jaw and is stark white. Her pale skin shimmers like crystal in dim lighting. Her sturdy traveling boots are stocked with thin daggers that can be used both for self-defense and for uncovering the secrets of the dead.  Ashley is almost always accompanied by the animated remains of her great hound, Reese.",
 };
