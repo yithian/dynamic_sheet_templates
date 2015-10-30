@@ -6,6 +6,8 @@ var dynamic_sheet_attrs = {
   "race" : "human",
   "level" : "1",
 
+  "avatar_image" : "https://db4sgowjqfwig.cloudfront.net/images/3034357/human_cleric_by_njoo.jpg",
+
   "str" : "11",
   "str_modifier" : "0",
   "str_modifier_plus_level" : "1",
@@ -102,7 +104,6 @@ var dynamic_sheet_attrs = {
 
   "feat01" : "Wasting Away (Adventurer)",
   "feat02" : "Skeletal Minion (Adventurer)",
-  "feat02" : "",
   "feat03" : "",
   "feat04" : "",
   "feat05" : "",
