@@ -47,7 +47,7 @@
 .ds_thirteenth_age .abilities span { float: left; }
 .ds_thirteenth_age .abilities span:first-of-type {
     text-align: left;
-    width: 7em;
+    width: 6em;
 }
 .ds_thirteenth_age .abilities span:not(first-of-type) {
     text-align: center;
@@ -61,11 +61,14 @@
 }
 .ds_thirteenth_age .abilities span:first-of-type { border-right: none; }
 .ds_thirteenth_age .abilities span:last-of-type { border-right: none; }
+.ds_thirteenth_age .abilities .ability_score_names span:first-of-type { border-bottom: none; }
 .ds_thirteenth_age .abilities .ability_modifiers_plus_level span { border-bottom: none; }
 
 .ds_thirteenth_age .abilities span:first-of-type { text-align: right; }
 
 .ds_thirteenth_age .abilities .ability_score_name { font-weight: bold; }
+
+.ds_thirteenth_age .ability_modifiers { color: darkgrey; }
 
 /***********************
  * derived stats (including health)
