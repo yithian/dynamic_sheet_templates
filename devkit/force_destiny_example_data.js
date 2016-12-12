@@ -116,6 +116,12 @@ var dynamic_sheet_attrs = {
   "weapon1_range" : "engaged",
   "weapon1_crit" : "2",
   "weapon1_special" : "sunder, breach",
+  "weapon2_name" : "vibroknife",
+  "weapon2_skill" : "melee (brawn)",
+  "weapon2_damage" : "+1",
+  "weapon2_range" : "engaged",
+  "weapon2_crit" : "3",
+  "weapon2_special" : "vicious",
 
   "motivation1_type" : "protect my crew",
   "motivation1_text" : "my team are my familiy. i can't let anyone hurt them!",
