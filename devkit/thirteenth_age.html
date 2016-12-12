@@ -5,23 +5,23 @@
   <script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
   <script type="text/javascript" src="javascripts/jquery.jeditable-1.7.1.js"></script>
   <script type="text/javascript" src="javascripts/namespace.js"></script>
-  
+
   <!-- This is where we do our magic. Take a look to get a better understanding of how to write javascript for your DST. -->
   <script type="text/javascript" src="http://www.obsidianportal.com/javascripts/characters.js"></script>
-  
+
   <!-- Load the example data. Modify this file to make sample data for your chosen system. -->
-  <script type="text/javascript" src="example_data.js"></script>
-  
+  <script type="text/javascript" src="thirteenth_age_example_data.js"></script>
+
   <!-- Load the CSS for the DST, replace with your own! -->
   <link href="dynamic_sheets/thirteenth_age/0.1/sheet.css" media="screen" rel="stylesheet" type="text/css" />
-  
+
   <!-- Load the JS for the DST, replace with your own! -->
   <script type="text/javascript" src="dynamic_sheets/thirteenth_age/0.1/sheet.js"></script>
-  
+
 </head>
 <body>
   <div class="dynamic_sheet_container">
-  
+
     <!-- Every dynamic sheet will be surrounded by a div that has the class of "ds_DST_SLUG". In this example, the slug for my DST is 'thirteenth_age' -->
     <div id="dynamic_sheet_999" class="dynamic_sheet ds_thirteenth_age editable">
       <!-- This is inserted automatically. Ignore it... -->
@@ -37,7 +37,7 @@
 
 
 
-      <!-- 
+      <!--
       Below is your HTML template.
       Copy ONLY this section into the HTML Template textarea on Obsidian Portal. Do not copy any of the
       surrounding HTML!
@@ -137,12 +137,12 @@
           <div class="health_stats">
               <div class="stat hp">
                   <span class="thirteenth_age_label stat_name">HP</span>
-                  <span class="dsf stat_score dsf_current_hp"></span> / 
+                  <span class="dsf stat_score dsf_current_hp"></span> /
                   <span class="dsf stat_score dsf_max_hp"></span>
               </div>
               <div class="stat recoveries">
                   <span class="thirteenth_age_label stat_name">Recoveries</span>
-                  <span class="dsf stat_score dsf_current_recoveries"></span> / 
+                  <span class="dsf stat_score dsf_current_recoveries"></span> /
                   <span class="dsf stat_score dsf_max_recoveries"></span>
               </div>
               <div class="stat recovery_roll">
@@ -338,7 +338,7 @@
               <div class="feats">
                   <h3>Feats</h3>
                   <div class="feat feat01">
-                      <span class="dsf dsf_feat01"></span> 
+                      <span class="dsf dsf_feat01"></span>
                   </div>
                   <div class="feat feat02">
                       <span class="dsf dsf_feat02"></span>
@@ -455,7 +455,7 @@
                       Skills <span class="dsf dsf_incremental_skills checkbox"></span>
                   </div>
                   <div class="advance">
-                      Power/Spell 
+                      Power/Spell
                       <span class="dsf dsf_incremental_power1 checkbox"></span>
                       <span class="dsf dsf_incremental_power2 checkbox"></span>
                       <span class="dsf dsf_incremental_power3 checkbox"></span>
@@ -494,7 +494,7 @@
     </div> <!-- thirteenth_age -->
   </div> <!-- dynamic_sheet_container -->
   <br/><br/>
-  
+
   <button id="character-save-button">Save</button>
   <br/>
   <p>
