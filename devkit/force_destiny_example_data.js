@@ -81,8 +81,8 @@ var dynamic_sheet_attrs = {
   "ranged_heavy_career" : "0",
   "ranged_heavy" : "0",
 
-  "core_world_career" : "0",
-  "core_world" : "0",
+  "core_worlds_career" : "0",
+  "core_worlds" : "0",
   "education_career" : "0",
   "education" : "0",
   "lore_career" : "0",
@@ -117,9 +117,9 @@ var dynamic_sheet_attrs = {
   "weapon1_crit" : "2",
   "weapon1_special" : "sunder, breach",
 
-  "motivation1_name" : "protect my crew",
+  "motivation1_type" : "protect my crew",
   "motivation1_text" : "my team are my familiy. i can't let anyone hurt them!",
-  "motivation2_name" : "",
+  "motivation2_type" : "",
   "motivation2_text" : "",
 
   "emotional_strength1" : "bravery",
