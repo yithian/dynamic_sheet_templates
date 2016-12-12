@@ -26,7 +26,7 @@ var dynamic_sheet_attrs = {
   "astrogation_career" : "0",
   "astrogation" : "0",
   "athletics_career" : "1",
-  "atheltics" : "1",
+  "athletics" : "1",
   "charm_career" : "0",
   "charm" : "0",
   "coercion_career" : "0",
