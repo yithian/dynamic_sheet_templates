@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>Force and Destiny</title>
+  <script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.jeditable-1.7.1.js"></script>
+  <script type="text/javascript" src="javascripts/namespace.js"></script>
+
+  <!-- This is where we do our magic. Take a look to get a better understanding of how to write javascript for your DST. -->
+  <script type="text/javascript" src="http://www.obsidianportal.com/javascripts/characters.js"></script>
+
+  <!-- Load the example data. Modify this file to make sample data for your chosen system. -->
+  <script type="text/javascript" src="force_destiny_example_data.js"></script>
+
+  <!-- Load the CSS for the DST, replace with your own! -->
+  <link href="dynamic_sheets/force_destiny/0.1/sheet.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <!-- Load the JS for the DST, replace with your own! -->
+  <script type="text/javascript" src="dynamic_sheets/force_destiny/0.1/sheet.js"></script>
+
+</head>
+<body>
+  <div class="dynamic_sheet_container">
+
+    <!-- Every dynamic sheet will be surrounded by a div that has the class of "ds_DST_SLUG". In this example, the slug for my DST is 'force_destiny' -->
+    <div id="dynamic_sheet_999" class="dynamic_sheet ds_force_destiny editable">
+      <!-- This is inserted automatically. Ignore it... -->
+      <span style="display:none;" class="dst_slug">force_destiny</span>
+
+
+
+
+
+
+
+
+
+
+
+      <!--
+      Below is your HTML template.
+      Copy ONLY this section into the HTML Template textarea on Obsidian Portal. Do not copy any of the
+      surrounding HTML!
+      -->
+      <div class="avatar">
+          <span class="dsf dsf_avatar_image readonly"></span>
+      </div>
+      <!-- row -->
+      <div class="basic_info">
+          <div class="name">
+              <span class="force_destiny_label">Name:</span>
+              <span class="dsf dsf_name"></span>
+          </div>
+          <div class="species">
+              <span class="force_destiny_label">Species:</span>
+              <span class="dsf dsf_species"></span>
+          </div>
+          <div class="career">
+              <span class="force_destiny_label">Career:</span>
+              <span class="dsf dsf_career"></span>
+          </div>
+          <div class="specializations">
+              <span class="force_destiny_label">Specialization Trees:</span>
+              <span class="dsf dsf_specializations"></span>
+          </div>
+      </div>
+      <!-- row -->
+      <div class="derived_stats">
+          <div class="stat soak">
+              <div class="force_destiny_label stat_name">SOAK VALUE</div>
+              <div class="dsf stat_score dsf_soak"></div>
+          </div>
+          <div class="stat wounds">
+              <div class="force_destiny_label stat_name">WOUNDS</div>
+              <div class="force_destiny_stat_block">
+                  <div class="dsf stat_score dsf_wound_threshold"></div>
+                  <div class="force_destiny_label stat_name">THRESHOLD</div>
+              </div>
+              <div class="force_destiny_stat_block">
+                  <div class="dsf stat_score dsf_wound_current"></div>
+                  <div class="force_destiny_label stat_name">CURRENT</div>
+              </div>
+          </div>
+          <div class="stat strain">
+              <div class="force_destiny_label stat_name">STRAIN</div>
+              <div class="force_destiny_stat_block">
+                  <div class="dsf stat_score dsf_strain_threshold"></div>
+                  <div class="force_destiny_label stat_name">THRESHOLD</div>
+              </div>
+              <div class="force_destiny_stat_block">
+                  <div class="dsf stat_score dsf_strain_current"></div>
+                  <div class="force_destiny_label stat_name">CURRENT</div>
+              </div>
+          </div>
+      </div>
+      <!-- row -->
+      <div class="characteristics">
+          <div class="force_destiny_row_label">CHARACTERISTICS</div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_brawn"></div>
+              <div class="force_destiny_label">BRAWN</div>
+          </div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_agility"></div>
+              <div class="force_destiny_label">AGILITY</div>
+          </div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_intellect"></div>
+              <div class="force_destiny_label">INTELLECT</div>
+          </div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_cunning"></div>
+              <div class="force_destiny_label">CUNNING</div>
+          </div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_willpower"></div>
+              <div class="force_destiny_label">WILLPOWER</div>
+          </div>
+          <div class="force_destiny_stat_block">
+              <div class="dsf stat_score dsf_presence"></div>
+              <div class="force_destiny_label">PRESENCE</div>
+          </div>
+      </div>
+      <!-- row -->
+      <div class="skills">
+          <div class="force_destiny_row_label">SKILLS</div>
+          <div class="skill_row">
+              <span class="force_destiny_skill_label">GENERAL SKILLS</span>
+              <span class="force_destiny_skill_label">CAREER?</span>
+              <span class="force_destiny_skill_label">RANK</span>
+              <span class="force_destiny_skill_label">COMBAT SKILLS</span>
+              <span class="force_destiny_skill_label">CAREER?</span>
+              <span class="force_destiny_skill_label">RANK</span>
+          </div>
+          <div class="skill_row">
+              <span class="force_destiny_label">Astrogation (Int)</span>
+              <span class="dsf dsf_astrogation_career checkbox"></span>
+              <span class="dsf dsf_astrogation"></span>
+              <span class="force_destiny_label">Brawl (Br)</span>
+              <span class="dsf dsf_brawl_career checkbox"></span>
+              <span class="dsf dsf_brawl"></span>
+          </div>
+          <div class="skill_row">
+              <span class="force_destiny_label">Athletics (Br)</span>
+              <span class="dsf dsf_athletics_career checkbox"></span>
+              <span class="dsf dsf_athletics"></span>
+              <span class="force_destiny_label">Gunnery (Ag)</span>
+              <span class="dsf dsf_gunnery_career checkbox"></span>
+              <span class="dsf dsf_gunnery"></span>
+          </div>
+          <div class="skill_row">
+              <span class="force_destiny_label">Charm (Pr)</span>
+              <span class="dsf dsf_charm_career checkbox"></span>
+              <span class="dsf dsf_charm"></span>
+              <span class="force_destiny_label">Lightsaber (Br)</span>
+              <span class="dsf dsf_lightsaber_career checkbox"></span>
+              <span class="dsf dsf_lightsaber"></span>
+          <div class="skill_row">
+              <span class="force_destiny_label">Coercion (Will)</span>
+              <span class="dsf dsf_coercion_career checkbox"></span>
+              <span class="dsf dsf_coercion"></span>
+              <span class="force_destiny_label">Melee (Br)</span>
+              <span class="dsf dsf_melee_career checkbox"></span>
+              <span class="dsf dsf_melee"></span>
+          </div>
+          </div>
+      </div>
+
+      <!-- all alone -->
+      <div class="bio">
+          <h3>Character Bio</h3>
+          <span class="dsf dsf_bio"></span>
+      </div>
+
+      <!-- footer -->
+      <div class="author_info">
+          Created by <span class="dsf dsf_dst_author"></span>
+      </div>
+      <!-- End HTML Template - Don't copy anything below here into the template! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- force_destiny -->
+  </div> <!-- dynamic_sheet_container -->
+  <br/><br/>
+
+  <button id="character-save-button">Save</button>
+  <br/>
+  <p>
+    Right here is a hidden &lt;div&gt; that holds the data values that will be saved to the server. Click the save button and then examine the DOM (using Firebug) to see what will be sent.
+  </p>
+  <div id="dynamic_sheet_values" style="display:none;"></div>
+</body>
+</html>
