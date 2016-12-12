@@ -2,9 +2,9 @@
 // Feel free to modify this to make sense with the game system you're using.
 var dynamic_sheet_attrs = {
   "name" : "Fyor Kast",
-  "career" : "Guardian",
   "species" : "Nautolan",
-  "specialization" : "Protector",
+  "career" : "Guardian",
+  "specializations" : "Protector",
 
   "avatar_image" : "https://db4sgowjqfwig.cloudfront.net/images/3698621/10-king-mannix_square_thumb.jpg",
 
@@ -76,7 +76,7 @@ var dynamic_sheet_attrs = {
   "lightsaber" : "0",
   "melee_career" : "1",
   "melee" : "1",
-  "ranged_light_career" : "0"
+  "ranged_light_career" : "0",
   "ranged_light" : "0",
   "ranged_heavy_career" : "0",
   "ranged_heavy" : "0",
@@ -118,7 +118,7 @@ var dynamic_sheet_attrs = {
   "weapon1_special" : "sunder, breach",
 
   "motivation1_name" : "protect my crew",
-  "motivation1_text" : "my team are my familiy. i can't let anyone hurt them!"
+  "motivation1_text" : "my team are my familiy. i can't let anyone hurt them!",
   "motivation2_name" : "",
   "motivation2_text" : "",
 
