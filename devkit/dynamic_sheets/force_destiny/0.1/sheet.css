@@ -1,0 +1,57 @@
+/****************************
+* This is the CSS for the DST.
+* Copy and paste this directly into the CSS textarea on obsidianportal.com
+*****************************/
+
+/***********************
+/* global styling
+ ***********************/
+.ds_force_destiny .force_destiny_label, .ds_force_destiny h3 { font-family: sans-serif; }
+
+.ds_force_destiny .force_destiny_label { font-weight: bold; }
+
+/***********************
+ * basic info
+ ***********************/
+.ds_force_destiny .basic_info {
+    background: lightgray;
+    margin-bottom: 2em;
+}
+
+/* cut out the bottom left corner of the basic info background */
+.ds_force_destiny .basic_info:after {
+    position: relative;
+    left: 0px;
+    bottom: 20px;
+    content: '';
+    border-bottom: 20px solid white;
+    border-right: 20px solid transparent;
+}
+
+/* separator lines between basic info items */
+.ds_force_destiny .basic_info div { border-bottom: 2px solid darkgrey; }
+.ds_force_destiny .basic_info .name .force_destiny_label { border-bottom: none; }
+
+.ds_force_destiny .avatar {
+    float: right;
+    max-height: 400px;
+    max-width: 200px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+/***********************
+ * derived stats
+ ***********************/
+/* layout */
+.ds_force_destiny .derived_stats { margin-bottom: 2em; }
+
+.ds_force_destiny .derived_stats div { text-align: center; }
+
+.ds_force_destiny .derived_stats .stat { margin-right: 2em; }
+
+.ds_force_destiny .derived_stats .stat, .ds_force_destiny .derived_stats .stat_block {
+    display: inline-block;
+    vertical-align: top;
+}
