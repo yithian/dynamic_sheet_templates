@@ -15,7 +15,8 @@
  ***********************/
 .ds_force_destiny .basic_info {
     background: lightgray;
-    margin-bottom: 2em;
+    width: 600px;
+    margin-bottom: 50px;
 }
 
 /* cut out the bottom left corner of the basic info background */
@@ -44,14 +45,32 @@
 /***********************
  * derived stats
  ***********************/
-/* layout */
-.ds_force_destiny .derived_stats { margin-bottom: 2em; }
+.ds_force_destiny .derived_stats {
+  margin-bottom: 2em;
+  background: lightpink;
+  width: 830px;
+}
+
+.ds_force_destiny .derived_stats .stat_shadow {
+  display: inline-block;
+  margin: 0 20px;
+  background: lightblue;
+}
 
 .ds_force_destiny .derived_stats div { text-align: center; }
 
-.ds_force_destiny .derived_stats .stat { margin-right: 2em; }
+.ds_force_destiny .derived_stats .stat {
+  position: relative; top: -2em; /* stats are a little above their shadows */
+  vertical-align: top;
+}
 
-.ds_force_destiny .derived_stats .stat, .ds_force_destiny .derived_stats .stat_block {
-    display: inline-block;
-    vertical-align: top;
+.ds_force_destiny .derived_stats .stat .stat_values { background: white; }
+
+.ds_force_destiny .derived_stats .stat .force_destiny_label {
+    color: white;
+    background: darkred;
+}
+.ds_force_destiny .derived_stats .stat .stat_name_light {
+  color: black;
+  background: lightblue;
 }
