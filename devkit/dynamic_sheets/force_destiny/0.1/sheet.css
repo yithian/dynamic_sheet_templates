@@ -23,7 +23,7 @@
 .ds_force_destiny .basic_info:after {
     position: relative;
     left: 0px;
-    bottom: 20px;
+    bottom: 18px;
     content: '';
     border-bottom: 20px solid white;
     border-right: 20px solid transparent;
