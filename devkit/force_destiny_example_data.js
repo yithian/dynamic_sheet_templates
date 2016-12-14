@@ -8,13 +8,13 @@ var dynamic_sheet_attrs = {
 
   "avatar_image" : "https://db4sgowjqfwig.cloudfront.net/images/3698621/10-king-mannix_square_thumb.jpg",
 
-  "soak" : "5",
-  "wound_threshold" : "17",
+  "soak_w" : "5",
+  "wound" : "17",
   "wound_current" : "1",
-  "strain_threshold" : "11",
+  "strain" : "11",
   "strain_current" : "0",
-  "defense_ranged" : "0",
-  "defense_melee" : "0",
+  "ranged_def" : "0",
+  "melee_def" : "0",
 
   "brawn" : "4",
   "agility" : "2",
@@ -188,10 +188,10 @@ var dynamic_sheet_attrs = {
   "force_power1_description" : "roll a force dice and add force pips to the results of an athletics roll",
   "force_power2_name" : "",
   "force_power2_description" : "",
-  "force_rating" : "1",
+  "forcerating_w" : "1",
 
-  "total_xp" : "130",
-  "available_xp" : "0",
+  "earned_xp" : "130",
+  "unspent_xp" : "0",
 
   "player" : "<a href='https://www.obsidianportal.com/profile/Yithian'>Yithian</a>",
   "campaign" : "<a href='https://orphansofthelight.obsidianportal.com/'>Orphans of the Light</a>",
