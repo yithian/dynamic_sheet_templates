@@ -67,9 +67,10 @@
 .ds_force_destiny .derived_stats .stat .stat_name {
     padding: 10px 0;
 }
+.ds_force_destiny .derived_stats .stat { border: 1px solid darkgrey; }
 .ds_force_destiny .derived_stats .stat span {
     display: inline-block;
-    width: 90px;
+    width: 88px;
 }
 .ds_force_destiny .derived_stats .stat .stat_name:first-of-type { width: 92px; }
 
