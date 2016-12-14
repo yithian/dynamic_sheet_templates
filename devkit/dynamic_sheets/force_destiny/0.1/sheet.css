@@ -50,7 +50,7 @@
  ***********************/
 .ds_force_destiny .derived_stats {
     margin-bottom: 2em;
-    background: lightpink;
+    background: #ffcce6; /* pale, pinkish color */
     width: 840px;
 }
 
@@ -79,7 +79,7 @@
 .ds_force_destiny .derived_stats .stat .stat_values { background: white; }
 .ds_force_destiny .derived_stats .stat .force_destiny_label {
     color: white;
-    background: brown;
+    background: #660000; /* deep red */
 }
 .ds_force_destiny .derived_stats .stat .stat_name_light {
     color: black;
