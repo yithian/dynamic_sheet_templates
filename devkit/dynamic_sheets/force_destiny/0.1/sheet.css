@@ -6,7 +6,10 @@
 /***********************
 /* global styling
  ***********************/
-.ds_force_destiny .force_destiny_label, .ds_force_destiny h3 { font-family: sans-serif; }
+.ds_force_destiny {
+    font-family: sans-serif;
+    font-size: 9pt;
+}
 
 .ds_force_destiny .force_destiny_label { font-weight: bold; }
 
@@ -46,31 +49,40 @@
  * derived stats
  ***********************/
 .ds_force_destiny .derived_stats {
-  margin-bottom: 2em;
-  background: lightpink;
-  width: 830px;
+    margin-bottom: 2em;
+    background: lightpink;
+    width: 840px;
 }
 
 .ds_force_destiny .derived_stats .stat_shadow {
-  display: inline-block;
-  margin: 0 20px;
-  background: lightblue;
+    display: inline-block;
+    position: relative; top: -25px;
+    margin: 0 10px;
+    width: 186px;
+    background: lightblue;
 }
+
+.ds_force_destiny .derived_stats .stat .stat_name_header,
+.ds_force_destiny .derived_stats .stat .stat_score,
+.ds_force_destiny .derived_stats .stat .stat_name {
+    padding: 10px 0;
+}
+.ds_force_destiny .derived_stats .stat span {
+    display: inline-block;
+    width: 90px;
+}
+.ds_force_destiny .derived_stats .stat .stat_name:first-of-type { width: 92px; }
 
 .ds_force_destiny .derived_stats div { text-align: center; }
 
-.ds_force_destiny .derived_stats .stat {
-  position: relative; top: -2em; /* stats are a little above their shadows */
-  vertical-align: top;
-}
-
 .ds_force_destiny .derived_stats .stat .stat_values { background: white; }
-
 .ds_force_destiny .derived_stats .stat .force_destiny_label {
     color: white;
-    background: darkred;
+    background: brown;
 }
 .ds_force_destiny .derived_stats .stat .stat_name_light {
-  color: black;
-  background: lightblue;
+    color: black;
+    background: lightblue;
 }
+
+.ds_force_destiny .derived_stats .stat_values span:nth-of-type(2) { border-left: 1px solid grey;}
