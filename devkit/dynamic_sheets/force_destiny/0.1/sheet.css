@@ -59,7 +59,7 @@
     position: relative; top: -25px;
     margin: 0 10px;
     width: 186px;
-    background: lightblue;
+    background: #b3ffe6; /* light blue */
 }
 
 .ds_force_destiny .derived_stats .stat .stat_name_header,
@@ -83,7 +83,7 @@
 }
 .ds_force_destiny .derived_stats .stat .stat_name_light {
     color: black;
-    background: lightblue;
+    background: #b3ffe6; /* light blue, to match the stat_shadow background */
 }
 
 .ds_force_destiny .derived_stats .stat_values span:nth-of-type(2) { border-left: 1px solid grey;}
