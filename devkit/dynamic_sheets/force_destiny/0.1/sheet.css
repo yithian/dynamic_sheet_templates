@@ -50,8 +50,8 @@
  ***********************/
 .ds_force_destiny .derived_stats {
     margin-bottom: 2em;
-    background: #ffcce6; /* pale, pinkish color */
     width: 840px;
+    background: #ffcce6; /* pale, pinkish color */
 }
 
 .ds_force_destiny .derived_stats .stat_shadow {
@@ -87,3 +87,36 @@
 }
 
 .ds_force_destiny .derived_stats .stat_values span:nth-of-type(2) { border-left: 1px solid grey;}
+
+/***********************
+ * characteristics
+ ***********************/
+.ds_force_destiny .characteristics {
+    text-align: center;
+    width: 920px;
+    margin-bottom: 40px;
+    background: #ffa64d; /* light orange */
+}
+
+.ds_force_destiny .characteristics .row_label  {
+    position: relative; top: -10px;
+    width: 200px;
+    padding: 5px 0;
+    margin: 0 360px;
+    background: #004d4d; /* green-blue */
+    color: white;
+}
+
+.ds_force_destiny .characteristics .stat_block {
+    display: inline-block;
+    width: 130px;
+    margin: 0 10px;
+    background: #004d4d; /* green-blue */
+}
+
+.ds_force_destiny .characteristics .stat_block .stat_score  { padding: 10px 0; }
+
+.ds_force_destiny .characteristics .stat_block .force_destiny_label {
+    padding: 10px 0;
+    background: #b3daff; /* washed-out pale blue */
+}
