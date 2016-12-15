@@ -170,3 +170,36 @@
     width: 109px;
 }
 .ds_force_destiny .skills .skill_row span:nth-of-type(3n+1) { width: 150px; }
+
+/***********************
+ * weapons
+ ***********************/
+.ds_force_destiny .weapons {
+    text-align: center;
+    width: 880px;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 40px;
+    background: #e5e4e2; /* very faint grey */
+}
+
+.ds_force_destiny .weapons .row_label  {
+    position: relative; top: -10px;
+    width: 200px;
+    padding: 5px 0;
+    margin: 0 340px;
+    background: #004d4d; /* green-blue */
+    color: white;
+}
+
+.ds_force_destiny .weapons .weapon_row { border: 1px dashed grey; }
+.ds_force_destiny .weapons .weapon_header_row { border: 1px solid #e5e4e2; /* very faint grey */ }
+
+.ds_force_destiny .weapons .weapon_row span {
+    text-align: left;
+    display: inline-block;
+    width: 140px;
+}
+
+.ds_force_destiny .weapons .weapon_header_row span { text-align: center; }
+.ds_force_destiny .weapons .weapon_header_row span:nth-of-type(1) { text-align: left; }
+.ds_force_destiny .weapons .weapon_header_row span:nth-of-type(6) { text-align: right; }
