@@ -109,12 +109,21 @@
 
 .ds_force_destiny .characteristics .stat_block {
     display: inline-block;
-    width: 130px;
-    margin: 0 10px;
+    width: 110px;
+    margin: 0 20px;
     background: #004d4d; /* green-blue */
 }
 
-.ds_force_destiny .characteristics .stat_block .stat_score  { padding: 10px 0; }
+.ds_force_destiny .characteristics .stat_block .stat_score  {
+    width: 70px;
+    height: 10px;
+    padding: 28px 0 28px 0;
+    margin: 5px 18px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 14pt;
+    background: white;
+}
 
 .ds_force_destiny .characteristics .stat_block .force_destiny_label {
     padding: 10px 0;
