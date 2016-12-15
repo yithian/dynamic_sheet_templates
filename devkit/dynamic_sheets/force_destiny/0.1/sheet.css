@@ -95,7 +95,7 @@
     text-align: center;
     width: 920px;
     margin-bottom: 40px;
-    background: #ffa64d; /* light orange */
+    background: #cf7c7c; /* light orange */
 }
 
 .ds_force_destiny .characteristics .row_label  {
@@ -127,5 +127,5 @@
 
 .ds_force_destiny .characteristics .stat_block .force_destiny_label {
     padding: 10px 0;
-    background: #b3daff; /* washed-out pale blue */
+    background: #7cb2cf; /* washed-out pale blue */
 }
