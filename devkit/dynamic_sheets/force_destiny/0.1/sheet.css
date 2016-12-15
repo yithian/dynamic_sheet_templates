@@ -137,9 +137,15 @@
  ***********************/
 .ds_force_destiny .skills {
     text-align: center;
-    width: 800px;
+    width: 820px;
     padding-bottom: 20px;
     margin-bottom: 40px;
+}
+
+.ds_force_destiny .skills .column {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
     background: #d1d0ce; /* faint grey */
 }
 
@@ -147,15 +153,20 @@
     position: relative; top: -10px;
     width: 200px;
     padding: 5px 0;
-    margin: 0 300px;
+    margin: 0 310px;
     background: #004d4d; /* green-blue */
     color: white;
 }
 
+.ds_force_destiny .skills .skill_row {
+    height: 20px;
+    border: 1px dashed grey;
+}
+.ds_force_destiny .skills .skill_header_row { border: 1px solid #d1d0ce; /* faint grey */ }
+
 .ds_force_destiny .skills .skill_row span {
     text-align: left;
     display: inline-block;
-    width: 110px;
+    width: 109px;
 }
-
 .ds_force_destiny .skills .skill_row span:nth-of-type(3n+1) { width: 150px; }
