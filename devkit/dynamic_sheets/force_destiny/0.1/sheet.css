@@ -203,3 +203,33 @@
 .ds_force_destiny .weapons .weapon_row span { text-align: center; }
 .ds_force_destiny .weapons .weapon_row span:nth-of-type(1) { text-align: left; }
 .ds_force_destiny .weapons .weapon_row span:nth-of-type(6) { text-align: right; }
+
+/***********************
+ * motivations
+ ***********************/
+.ds_force_destiny .motivations_area {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: lightgray;
+}
+
+.ds_force_destiny .motivations_area .motivations_header {
+    width: 100px;
+    padding-left: 500px;
+}
+
+.ds_force_destiny .motivations_area .motivation {
+    display: inline-block;
+    vertical-align: top;
+    width: 288px;
+    min-height: 100px;
+    padding: 5px;
+    background: white;
+}
+
+.ds_force_destiny .motivations_area .motivation .motivation_type {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
