@@ -200,6 +200,6 @@
     width: 140px;
 }
 
-.ds_force_destiny .weapons .weapon_header_row span { text-align: center; }
-.ds_force_destiny .weapons .weapon_header_row span:nth-of-type(1) { text-align: left; }
-.ds_force_destiny .weapons .weapon_header_row span:nth-of-type(6) { text-align: right; }
+.ds_force_destiny .weapons .weapon_row span { text-align: center; }
+.ds_force_destiny .weapons .weapon_row span:nth-of-type(1) { text-align: left; }
+.ds_force_destiny .weapons .weapon_row span:nth-of-type(6) { text-align: right; }
