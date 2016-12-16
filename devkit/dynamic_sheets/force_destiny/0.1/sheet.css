@@ -264,7 +264,17 @@
     display: inline-block;
     vertical-align: top;
     width: 287px;
-    min-height: 100px;
     padding: 5px;
     background: white;
+}
+
+.ds_force_destiny .morality_area .emotional_strengths,
+.ds_force_destiny .morality_area .emotional_weaknesses,
+.ds_force_destiny .morality_area .conflict,
+.ds_force_destiny .morality_area .morality { min-height: 60px; }
+
+.ds_force_destiny .morality_area .force_destiny_label {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
 }
