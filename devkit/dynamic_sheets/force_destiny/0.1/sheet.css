@@ -236,3 +236,35 @@
     border-bottom: 1px solid black;
     margin-bottom: 5px;
 }
+.ds_force_destiny .motivations_area .motivation .motivation_type .force_destiny_label { margin-right: 2px; }
+
+/***********************
+ * morality
+ ***********************/
+.ds_force_destiny .morality_area {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: lightgray;
+}
+
+.ds_force_destiny .morality_area .morality_header {
+    text-align: right;
+    width: 100px;
+    padding-left: 500px;
+}
+
+.ds_force_destiny .morality_area .moralities {
+    border: 1px solid #008000; /* dull green */
+    background: #008000; /* dull green */
+}
+
+.ds_force_destiny .morality_area .strength_weakness,
+.ds_force_destiny .morality_area .conflict_morality {
+    display: inline-block;
+    vertical-align: top;
+    width: 287px;
+    min-height: 100px;
+    padding: 5px;
+    background: white;
+}
