@@ -219,6 +219,8 @@
     padding-left: 500px;
 }
 
+.ds_force_destiny .motivations_area .motivations { background: #008000; /* dull green */ }
+
 .ds_force_destiny .motivations_area .motivation {
     display: inline-block;
     vertical-align: top;
