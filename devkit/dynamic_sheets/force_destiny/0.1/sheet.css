@@ -278,3 +278,40 @@
     border-bottom: 1px solid black;
     margin-bottom: 5px;
 }
+
+/***********************
+ * equipment
+ ***********************/
+.ds_force_destiny .equipment_area {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: lightgray;
+}
+
+.ds_force_destiny .equipment_area .row { padding: 5px 0 5px 0; }
+.ds_force_destiny .equipment_area .row div { display: inline-block; }
+
+.ds_force_destiny .equipment_area .row .equipment_header {
+    width: 100px;
+    margin-left: 197px;
+    text-align: right;
+}
+
+.ds_force_destiny .equipment_area .credits,
+.ds_force_destiny .equipment_area .weapons_armor,
+.ds_force_destiny .equipment_area .personal_gear {
+    display: inline-block;
+    width: 287px;
+    padding: 5px;
+    background: white;
+}
+
+.ds_force_destiny .equipment_area .credits .force_destiny_label { margin-right: 5px; }
+
+.ds_force_destiny .equipment_area .weapons_armor .force_destiny_label,
+.ds_force_destiny .equipment_area .personal_gear .force_destiny_label {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
