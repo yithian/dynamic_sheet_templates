@@ -315,3 +315,67 @@
     border-bottom: 1px solid black;
     margin-bottom: 5px;
 }
+
+/***********************
+ * abilities
+ ***********************/
+.ds_force_destiny .abilities_area {
+    width: 900px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: lightgray;
+}
+
+.ds_force_destiny .abilities_header {
+    text-align: right;
+    width: 900px;
+    border-bottom: 1px solid black;
+}
+
+.ds_force_destiny .ability_list .ability_row {
+    margin: 3px 0;
+    background: white;
+}
+.ds_force_destiny .ability_list .ability_titles_row { background: lightgrey; }
+
+.ds_force_destiny .ability_list .ability_titles_row span:nth-of-type(3) { text-align: right; }
+
+.ds_force_destiny .ability_list .ability_row span { display: inline-block; }
+.ds_force_destiny .ability_list .ability_row span:nth-of-type(1) { width: 250px; }
+.ds_force_destiny .ability_list .ability_row span:nth-of-type(2) { width: 85px; }
+.ds_force_destiny .ability_list .ability_row span:nth-of-type(3) { width: 550px; }
+
+.ds_force_destiny .force_power_row { margin: 10px 0; }
+
+.ds_force_destiny .force_power_row .force_power_name,
+.ds_force_destiny .force_power_row .force_power_description {
+    vertical-align: top;
+    height: 75px;
+}
+
+.ds_force_destiny .force_power_row .force_power_name {
+    display: inline-block;
+    width: 290px;
+    padding: 5px;
+    border: 1px solid #008000;  /* dull green */
+    margin-right: 5px;
+    background: white;
+}
+
+.ds_force_destiny .force_power_row .force_power_name .force_power_label { border-bottom: 1px solid grey; }
+
+.ds_force_destiny .force_power_row .force_power_description {
+    display: inline-block;
+    width: 577px;
+    padding: 5px;
+    border: 1px solid #008000;  /* dull green */
+    background: white;
+}
+
+.ds_force_destiny .force_rating {
+    padding: 5px;
+    width: 200px;
+    background: white;
+}
+
+.ds_force_destiny .force_rating .force_destiny_label { margin-right: 10px; }
