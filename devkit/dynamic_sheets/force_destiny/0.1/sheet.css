@@ -205,6 +205,38 @@
 .ds_force_destiny .weapons .weapon_row span:nth-of-type(6) { text-align: right; }
 
 /***********************
+ * xp
+ ***********************/
+.ds_force_destiny .xp {
+    width: 865px;
+    height: 48px;
+    margin: 0 20px 50px 20px;
+    background: #7cb2cf; /* washed-out pale blue */
+}
+
+.ds_force_destiny .xp .total_xp_area,
+.ds_force_destiny .xp .available_xp_area {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    background: white;
+}
+.ds_force_destiny .xp .available_xp_area { margin-left: 426px; }
+
+.ds_force_destiny .xp .xp_value {
+    font-size: 14pt;
+    margin: 20px 0;
+}
+.ds_force_destiny .xp .xp_label {
+    padding: 10px 0;
+    background: #7cb2cf; /* washed-out pale blue */
+}
+
+/***********************
  * bio
  ***********************/
 .ds_force_destiny .bio {
