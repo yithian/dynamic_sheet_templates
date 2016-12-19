@@ -205,6 +205,19 @@
 .ds_force_destiny .weapons .weapon_row span:nth-of-type(6) { text-align: right; }
 
 /***********************
+ * bio
+ ***********************/
+.ds_force_destiny .bio {
+    position: absolute;
+    left: 680px;
+    width: 230px;
+    height: 565px;
+    padding: 20px;
+    float: right;
+    background: lightgrey;
+}
+
+/***********************
  * motivations
  ***********************/
 .ds_force_destiny .motivations_area {
