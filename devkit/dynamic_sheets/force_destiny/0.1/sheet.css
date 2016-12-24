@@ -70,13 +70,22 @@
 .ds_force_destiny .derived_stats .stat { border: 1px solid darkgrey; }
 .ds_force_destiny .derived_stats .stat span {
     display: inline-block;
-    width: 88px;
 }
-.ds_force_destiny .derived_stats .stat .stat_name:first-of-type { width: 92px; }
+.ds_force_destiny .derived_stats .stat .stat_name:first-of-type {
+    position: relative;
+    left: -13px;
+    width: 99px;
+}
+.ds_force_destiny .derived_stats .defense .stat_name:first-of-type {
+    left: -23px;
+    width: 95px;
+}
 
 .ds_force_destiny .derived_stats div { text-align: center; }
 
+.ds_force_destiny .derived_stats .stat .stat_name_header,
 .ds_force_destiny .derived_stats .stat .stat_values { background: white; }
+.ds_force_destiny .derived_stats .stat .stat_values span { width: 80px; }
 .ds_force_destiny .derived_stats .stat .force_destiny_label {
     color: white;
     background: #660000; /* deep red */
@@ -87,6 +96,28 @@
 }
 
 .ds_force_destiny .derived_stats .stat_values span:nth-of-type(2) { border-left: 1px solid grey;}
+
+.ds_force_destiny .derived_stats .stat .stat_name_header .force_destiny_label {
+    width: 126px;
+    padding: 5px 0;
+}
+.ds_force_destiny .derived_stats .stat .stat_name_header .hex_left,
+.ds_force_destiny .derived_stats .stat .stat_name_header .hex_right {
+    position: relative;
+    top: 8px;
+    content: '';
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+.ds_force_destiny .derived_stats .stat .stat_name_header .hex_left {
+    left: 4px;
+    border-right: 12px solid #660000; /* deep red */
+}
+
+.ds_force_destiny .derived_stats .stat .stat_name_header .hex_right {
+    right: 4px;
+    border-left: 12px solid #660000; /* deep red */
+}
 
 /***********************
  * characteristics
@@ -144,7 +175,7 @@
 
 .ds_force_destiny .skills .column {
     display: inline-block;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     margin: 0 10px;
     background: #d1d0ce; /* faint grey */
 }
